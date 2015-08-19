@@ -86,8 +86,8 @@ public class Bin<T extends Comparable<T>> implements Comparable<Bin<T>> {
      * Compares strictly for use in the histogram. Compares only based on the from variable and assumes a set of
      * strictly ordered bins.
      * This is not particularly good for double bins with sloppy construction. No provision for comparison granularity
-     * @param o
-     * @return
+     * @param o the Bin to compare to
+     * @return a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
      */
     @Override
     public int compareTo(Bin<T> o) {
